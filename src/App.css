@@ -7,6 +7,9 @@ body {
 section.main {
   padding-left: 10%;
   padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #logo {
@@ -213,4 +216,48 @@ div.col-lg-8 {
   .heady {
     margin-bottom: 0px;
   }
+}
+
+.pink-in-button, .pink-out-button:hover {
+  background: #EDE6F5;  
+  box-shadow: inset 5px 5px 10px #c9c4d0,
+            inset -5px -5px 10px #ffffff;
+  border-radius: 10px;
+  color: #1F1F1F;
+}
+
+.pink-out-button {
+  background: linear-gradient(145deg, #fef6ff, #d5cfdd);
+  box-shadow:  5px 5px 5px #c9c4d0,
+             -5px -5px 5px #ffffff;
+  border-radius: 10px;
+  color: #1F1F1F;
+}
+
+div.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  text-align: center;
+  padding: 30px;
+  max-width: 700px;
+}
+
+.contact-link {
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 12px;
+  text-decoration: none;
+}
+
+div.contact h4 {
+  margin-bottom: 30px;
+}
+
+#linkedin, #github, #email {
+  width: 25px;
+  margin-left: 5px;
 }
