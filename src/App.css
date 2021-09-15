@@ -30,7 +30,7 @@ section.main {
   padding: 10px;
 }
 
-.out-button {
+.black-out-button {
   background: linear-gradient(145deg, #212121, #1c1c1c);
   box-shadow: 5px 5px 5px #1a1a1a, -5px -5px 5px #242424;
   border-radius: 10px;
@@ -44,15 +44,15 @@ section.main {
     box-shadow: inset -5px -5px 10px 5px #242424, inset 5px 5px 10px 5px #1A1A1A;
 }
 
-.in-button, .out-button:hover {
+.black-in-button, .black-out-button:hover {
   box-shadow: inset -5px -5px 10px 5px #242424, inset 5px 5px 10px 5px #1A1A1A;
   border-radius: 10px;
 }
 
-.nav-link.in-button, .nav-link.out-button:hover {
+/* .nav-link.in-button, .nav-link.out-button:hover {
   height: 55px;
   width: 155px;
-}
+} */
 
 .navbar-brand {
   border-radius: 50%;
@@ -75,7 +75,7 @@ section.main {
     color: white;
 }
 
-.navbar-nav .nav-link.in-button {
+.navbar-nav .nav-link.black-in-button {
   height: 55px;
   width: 155px;
   padding-top: 10px;
@@ -88,6 +88,12 @@ button.navbar-toggler.out-button:hover {
 h2.home {
   font-weight: 700;
   font-size: 4rem;
+}
+h1.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 h1.home {
@@ -108,13 +114,24 @@ h1.home {
   padding-bottom: 10%;
 }
 
-.row.home .in-button {
+.row.home .black-in-button {
   padding: 35px;
   text-align: center;
   font-size: 1.5rem;
   min-height: 150px;
   max-width: 450px;
 }
+
+.about-text {
+    text-align: center;
+    /* height: 450px; */
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px;
+    max-width: 600px;
+    font-size: 20px;
+}
+
 
 @media only screen and (max-width: 550px) {
   h2.home {
@@ -131,10 +148,69 @@ h1.home {
   .row.home .in-button {
     font-size: 1.25rem;
   }
+  .about-text {
+    font-size: 16px;
+  }
 }
-
-
 
 .row.home {
   justify-content: flex-end;
+}
+
+.blue-in-button {
+  background-color: #E6E6F5;
+  color: #1F1F1F;
+  background: linear-gradient(0deg, #E6E6F5, #E6E6F5);
+  box-shadow: inset -5px -5px 10px 5px rgba(255, 255, 255, 0.05), inset 5px 5px 10px 5px rgba(106, 107, 131, 0.25);
+  border-radius: 10px;
+}
+
+#headshot {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.heady {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  max-height: 325px;
+  margin-bottom: 40px;
+}
+
+div.col-12.col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.blue-in-button {
+  box-shadow: inset 5px 5px 10px #aaaad0, inset -5px -5px 10px #e6e6ff;
+  background-color: #c8c8f5;
+}
+
+p.blue-in-button {
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+.row.about {
+  align-items: center;
+}
+
+div.col-lg-8 {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .heady {
+    margin-bottom: 0px;
+  }
 }

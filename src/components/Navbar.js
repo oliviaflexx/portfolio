@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg">
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand in-button ">
+        <NavLink to="/" className="navbar-brand black-in-button ">
           <img id="logo" alt="logo" src={logo}></img>
         </NavLink>
         <button
-          className="navbar-toggler out-button"
+          className="navbar-toggler black-out-button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -25,7 +25,8 @@ const Navbar = () => {
             <NavLink
               to="/projects"
               className={(isActive) =>
-                "nav-link" + (!isActive ? " out-button" : " in-button")
+                "nav-link" +
+                (!isActive ? " black-out-button" : " black-in-button")
               }
             >
               Projects
@@ -33,7 +34,8 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={(isActive) =>
-                "nav-link" + (!isActive ? " out-button" : " in-button")
+                "nav-link" +
+                (!isActive ? " black-out-button" : " black-in-button")
               }
             >
               About
@@ -41,7 +43,8 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={(isActive) =>
-                "nav-link" + (!isActive ? " out-button" : " in-button")
+                "nav-link" +
+                (!isActive ? " black-out-button" : " black-in-button")
               }
             >
               Contact

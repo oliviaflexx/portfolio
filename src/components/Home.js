@@ -8,7 +8,7 @@ function Home(props) {
         <h1 className="home">Olivia Felix</h1>
       </div>
       <div className="row home">
-        <div className="col-12 col-sm-6 in-button">
+        <div className="col-12 col-sm-6 black-in-button">
           I love making websites and web applications.
           <br></br>
           Welcome to my portfolio!
