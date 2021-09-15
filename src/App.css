@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #1F1F1F;
+  font-family: "Nunito", sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+section.main {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#logo {
+  width: 50px;
+  margin: 15px;
+}
+.navbar {
+  padding-bottom: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+  padding: 10px;
+}
+
+.out-button {
+  background: linear-gradient(145deg, #212121, #1c1c1c);
+  box-shadow: 5px 5px 5px #1a1a1a, -5px -5px 5px #242424;
+  border-radius: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    background: #1F1F1F;
+    box-shadow: inset -5px -5px 10px 5px #242424, inset 5px 5px 10px 5px #1A1A1A;
+}
+
+.in-button, .out-button:hover {
+  box-shadow: inset -5px -5px 10px 5px #242424, inset 5px 5px 10px 5px #1A1A1A;
+  border-radius: 10px;
+}
+
+.nav-link.in-button, .nav-link.out-button:hover {
+  height: 55px;
+  width: 155px;
+}
+
+.navbar-brand {
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    margin: 20px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 7px;
+    color: white;
+}
+
+.navbar-nav .nav-link.in-button {
+  height: 55px;
+  width: 155px;
+  padding-top: 10px;
+}
+
+button.navbar-toggler.out-button:hover {
+  width: auto;
+}
+
+h2.home {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h1.home {
+  text-align: center;
+  font-weight: 900;
+  font-size: 6rem;
+  text-shadow: 8px 4px 0px #a8a8ce;
+}
+
+@supports (-webkit-text-stroke:  10px #1F1F1F) {
+  h1.home {
+    -webkit-text-stroke: 4px #1F1F1F;
+    -webkit-text-fill-color: white;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.home {
+  padding-bottom: 10%;
+}
+
+.row.home .in-button {
+  padding: 35px;
+  text-align: center;
+  font-size: 1.5rem;
+  min-height: 150px;
+  max-width: 450px;
+}
+
+@media only screen and (max-width: 550px) {
+  h2.home {
+    font-size: 2rem;
   }
+  h1.home {
+    font-size: 3rem;
+    -webkit-text-stroke: 2px #1F1F1F;
+    text-shadow: 5px 1px 0px #a8a8ce;
+  }
+  .home {
+    padding-bottom: 20%;
+  }
+  .row.home .in-button {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+.row.home {
+  justify-content: flex-end;
 }
