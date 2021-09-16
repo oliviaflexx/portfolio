@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { data } from "../data";
+import { data } from "../project_data";
 import { Link, useParams } from "react-router-dom";
 
 const Project = () => {

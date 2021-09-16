@@ -1,6 +1,6 @@
 import React from "react";
 import linkedin from "./linkedin.svg";
-import github from "./github.svg";
+import github from "./github-contact.svg";
 import email from "./email.svg";
 
 function Contact(props) {
