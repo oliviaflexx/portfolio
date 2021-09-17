@@ -13,7 +13,7 @@ function Projects(props) {
         {projects.map( (project) => {
           return (
             <div className="col-xl-4 col-lg-6 col-sm-12 projects">
-              <div key={project.id} className="project-card blue-in-button">
+              <div key="{project.id}" className="project-card blue-in-button">
                 <Link className="blue-out-button link" to={`/project/${project.id}`}>
                   {project.name}
                 </Link>
