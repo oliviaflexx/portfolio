@@ -5,7 +5,7 @@ import github from "./github.svg";
 import live from "./live.svg";
 
 function Projects(props) {
-  const [projects, setProjects] = useState(data);
+  const [projects] = useState(data);
   return (
     <section className="main">
       <h1 className="title">Projects</h1>

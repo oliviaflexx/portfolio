@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../project_data";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import github from "./github.svg";
 import live from "./live.svg";
 
@@ -56,9 +56,6 @@ const Project = () => {
           </div>
         </div>
       </div>
-      {/* <Link to="/projects" className="btn">
-        Back To Projects
-      </Link> */}
     </section>
   );
 };

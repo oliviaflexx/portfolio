@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import { v4 as uuid } from 'uuid';
 
 function Home(props) {
   return (
