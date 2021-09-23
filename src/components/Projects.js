@@ -14,7 +14,10 @@ function Projects(props) {
           return (
             <div className="col-xl-4 col-lg-6 col-sm-12 projects">
               <div key="{project.id}" className="project-card blue-in-button">
-                <Link className="blue-out-button link" to={`/project/${project.id}`}>
+                <Link
+                  className="blue-out-button link"
+                  to={`/project/${project.id}`}
+                >
                   {project.name}
                 </Link>
                 <div className="blue-in-button short-descrip">
@@ -23,12 +26,16 @@ function Projects(props) {
                 <a
                   href={project.github}
                   className="blue-out-button logo-link left"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={github} alt="github"></img>
                 </a>
                 <a
                   href={project.live}
                   className="blue-out-button logo-link right"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img id="live" src={live} alt="live"></img>
                 </a>

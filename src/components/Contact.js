@@ -15,6 +15,8 @@ function Contact(props) {
         <a
           href="https://linkedin.com/in/olivia-felix-b03586205"
           className="pink-out-button contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           LinkedIn
           <img id="linkedin" src={linkedin} alt="linkedin logo"></img>
@@ -22,6 +24,8 @@ function Contact(props) {
         <a
           href="https://github.com/oliviaflexx"
           className="pink-out-button contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           GitHub
           <img id="github" src={github} alt="github logo"></img>

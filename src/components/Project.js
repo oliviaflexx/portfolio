@@ -12,8 +12,6 @@ const Project = () => {
   useEffect(() => {
     const newProject = data.find((project) => project.id === parseInt(id));
     setProject(newProject);
-    console.log('RAN USEFFECT')
-    console.log("RAN USEFFECT", project);
     setTechs(newProject.tech.map(function (tech, index) {
       return (
         <p key={index} className="individual-tech">
@@ -30,11 +28,21 @@ const Project = () => {
         <div className="col-12 col-lg-8">
           <div className="pink-in-button big-div">
             <div className="pink-in-button descrip">{project.long_descrip}</div>
-            <a href={project.github} className="pink-out-button code">
+            <a
+              href={project.github}
+              className="pink-out-button code"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Code
               <img class="project-logo" src={github} alt="github-logo"></img>
             </a>
-            <a href={project.live} className="pink-out-button live">
+            <a
+              href={project.live}
+              className="pink-out-button live"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Live
               <img
                 class="project-logo"
@@ -50,8 +58,6 @@ const Project = () => {
             <div className="pink-in-button tech-title">Tech Used</div>
             <div className="pink-in-button tech-stack">
               {techs}
-              {console.log("HTML")}
-              {console.log("HTML", project)}
             </div>
           </div>
         </div>
