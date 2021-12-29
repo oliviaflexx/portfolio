@@ -1,26 +1,23 @@
 import React from "react";
-import headshot from './headshot.jpeg'
+// import headshot from './headshot.jpeg'
 
 function About(props) {
   return (
     <section className="main">
       <h1 className="title">About me</h1>
       <div className="row about">
-        <div className="col-12 col-lg-4">
+        {/* <div className="col-12 col-lg-4">
           <div className="blue-in-button heady">
             <img id="headshot" src={headshot} alt="headshot"></img>
             <p className="blue-in-button">Hi, I'm Olivia!</p>
           </div>
-        </div>
-        <div className="col-12 col-lg-8 about">
+        </div> */}
+        <div className="col-12 col-lg-12 about">
           <div className="blue-in-button about-text">
-            I’m a psych major at McGill University but in my third year I found
-            an interest in programming. I was curious about coding so I took
-            Harvard’s CS50 course online and immediately became addicted. Since
-            then I’ve just been learning new tech, adding to my knowledge of the
-            same tech and building as many projects as I can to apply that
-            knowledge in a real way. Thanks for taking the time to see a bit of
-            what I do!
+            Although my major at McGill is psychology, I was curious about coding so I took
+            Harvard’s CS50 course online and immediately became addicted. I love the problem solving aspect of programming and I'm so grateful for that fact that there are infinite resources available online to learn whatever I want.
+            The way I've learned web development is not just by reading tutorials and following online courses, but by building my own unique projects and trying to figure it out myself. Running into so many seemingly impossible errors and problems to solve has taught me
+            that with enough effort, patience and passion I can meet any challenge that comes my way.
           </div>
         </div>
       </div>

@@ -9,11 +9,10 @@ function Contact(props) {
       <h1 className="title">Contact</h1>
       <div className="pink-in-button contact">
         <h4>
-          I’m open to working at internships, freelancing or working
-          collaboratively with other developers
+          I'm currently seeking full time Full Stack Engineering opportunities. Please don't hesitate to contact me if you are interested in my work or skills!
         </h4>
         <a
-          href="https://linkedin.com/in/olivia-felix-b03586205"
+          href="https://linkedin.com/in/olivia-felix"
           className="pink-out-button contact-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +30,7 @@ function Contact(props) {
           <img id="github" src={github} alt="github logo"></img>
         </a>
         <a
-          href="mailto:oliviaflexx@gmail.com"
+          href="mailto:oliviafelix360@gmail.com"
           className="pink-out-button contact-link"
         >
           Email

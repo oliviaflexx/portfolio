@@ -76,6 +76,7 @@ section.main {
     font-size: 23px;
     padding-top: 7px;
     color: white;
+    transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .navbar-nav .nav-link.black-in-button {
@@ -123,6 +124,7 @@ h1.home {
   font-size: 1.5rem;
   min-height: 150px;
   max-width: 450px;
+  transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .row.home {
   width: 100%;
@@ -203,6 +205,7 @@ p.blue-in-button {
   margin-top: 25px;
   margin-bottom: 25px;
   text-align: center;
+  transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 
@@ -210,7 +213,7 @@ p.blue-in-button {
   align-items: center;
 }
 
-div.col-lg-8 {
+div.col-lg-12 {
   display: flex;
   justify-content: center;
 }
@@ -227,6 +230,7 @@ div.col-lg-8 {
             inset -5px -5px 10px #ffffff;
   border-radius: 10px;
   color: #1F1F1F;
+  transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .pink-out-button {
@@ -304,7 +308,7 @@ a.blue-out-button.logo-link {
   position: relative;
 }
 
-a.blue-out-button.link {
+div.blue-out-button.link {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -312,6 +316,12 @@ a.blue-out-button.link {
   color:#1a1a1a;
   width: 100%;
   display: block;
+  transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    top: 15px;
+    max-width: 90%;
 }
 
 div.projects {
@@ -338,6 +348,7 @@ div.projects {
     border-radius: 50%;
     display: flex;
     justify-content: center;
+
 }
 
 .blue-out-button.logo-link.right {
@@ -367,7 +378,8 @@ a.live, a.code {
 }
 
 div.big-div {
-  max-width: 600px;
+  max-width: 800px;
+  margin-bottom: 2rem;
 }
 
 a.code {
@@ -460,10 +472,42 @@ footer{
     margin-top: auto;
 }
 
-/* new shit */
 
 /* .black-out-button {
   background: linear-gradient(145deg, #86d7b1, #71b595);
 box-shadow:  5px 5px 5px #6aab8c,
              -5px -5px 5px #90e7be;
 } */
+
+div.skill-container {
+  max-width: 125px;
+  margin: 1rem;
+  max-height: 150px;
+}
+
+img.skill {
+  width: 100%;
+  max-height: 100%;
+}
+
+div.row.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+div.row.skills h2 {
+  text-align: center;
+}
+h1.top {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) {
+  div.skill-container {
+  max-width: 100px;
+}
+}

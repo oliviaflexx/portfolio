@@ -10,24 +10,28 @@ const Project = () => {
   const { id } = useParams();
 
   useEffect(() => {
+  
     const newProject = data.find((project) => project.id === parseInt(id));
     setProject(newProject);
-    setTechs(newProject.tech.map(function (tech, index) {
-      return (
-        <p key={index} className="individual-tech">
-          {tech}
-        </p>
-      );
-    }))
+    setTechs(
+      newProject.techs.map(function (tech, index) {
+        return (
+          <p key={index} className="individual-tech">
+            {tech}
+          </p>
+        );
+      })
+    );
   }, [id, project]);
 
   return (
     <section className="main">
       <h1 className="title">{project.name}</h1>
       <div className="row project">
-        <div className="col-12 col-lg-8">
+        <div className="col-12 col-lg-12">
           <div className="pink-in-button big-div">
             <div className="pink-in-button descrip">{project.long_descrip}</div>
+            <div className="pink-in-button descrip">{techs}</div>
             <a
               href={project.github}
               className="pink-out-button code"
@@ -35,32 +39,36 @@ const Project = () => {
               rel="noopener noreferrer"
             >
               View Code
-              <img class="project-logo" src={github} alt="github-logo"></img>
-            </a>
-            <a
-              href={project.live}
-              className="pink-out-button live"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Live
               <img
-                class="project-logo"
-                src={live}
-                alt="live-logo"
-                id="live"
+                className="project-logo"
+                src={github}
+                alt="github-logo"
               ></img>
             </a>
+            {project.live && (
+              <a
+                href={project.live}
+                className="pink-out-button live"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Live
+                <img
+                  className="project-logo"
+                  src={live}
+                  alt="live-logo"
+                  id="live"
+                ></img>
+              </a>
+            )}
           </div>
         </div>
-        <div className="col-12 col-lg-4">
+        {/* <div className="col-12 col-lg-4">
           <div className="pink-in-button tech">
             <div className="pink-in-button tech-title">Tech Used</div>
-            <div className="pink-in-button tech-stack">
-              {techs}
-            </div>
+            <div className="pink-in-button tech-stack">{techs}</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
 import Projects from "./Projects";
-import Project from "./Project";
+// import Project from "./Project";
 // navbar
 import Navbar from "./Navbar";
 const ReactRouterSetup = () => {
@@ -27,7 +27,7 @@ const ReactRouterSetup = () => {
         <Route path="/projects">
           <Projects />
         </Route>
-        <Route path="/project/:id" children={<Project />}></Route>
+        {/* <Route path="/project/:id" children={<Project />}></Route> */}
         <Route path="*">
           <Error />
         </Route>
