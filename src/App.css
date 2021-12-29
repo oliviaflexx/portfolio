@@ -510,4 +510,11 @@ h1.top {
   div.skill-container {
   max-width: 100px;
 }
+section.main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+div.descrip {
+  padding: 15px;
+}
 }
